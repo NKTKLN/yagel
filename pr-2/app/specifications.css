@@ -1,0 +1,299 @@
+.specifications {
+  padding-top: 10px;
+}
+
+.spec-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.35fr;
+  gap: 14px;
+}
+
+.source-manifest {
+  color: var(--paper);
+  background: var(--ink);
+  padding: 27px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.manifest-top,
+.spec-sheet-heading,
+.open-part-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.manifest-top .eyebrow {
+  color: #b6c4a9;
+  font-size: 9px;
+}
+
+.manifest-license {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  margin: 23px 0 29px;
+}
+
+.manifest-license > span {
+  font-size: clamp(60px, 6vw, 90px);
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.manifest-license > p {
+  color: #bec8b5;
+  font-size: 11px;
+  line-height: 1.65;
+  padding-bottom: 4px;
+}
+
+.manifest-layers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.manifest-layers > li {
+  display: grid;
+  grid-template-columns: 21px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 0;
+  border-top: 1px solid #424b40;
+}
+
+.manifest-layers .mono {
+  color: #b6c4a9;
+  font-size: 9px;
+}
+
+.manifest-layers strong {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.manifest-layers li > span:last-child {
+  color: #b6bcb0;
+  font-size: 10px;
+}
+
+.manifest-note {
+  border-top: 1px solid #424b40;
+  padding-top: 22px;
+  margin-top: auto;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #b6bcb0;
+}
+
+.spec-sheet {
+  border: 1px solid var(--line);
+  padding: 25px 28px 8px;
+  background: var(--surface);
+}
+
+.spec-sheet-heading {
+  padding-bottom: 22px;
+}
+
+.spec-sheet-heading .eyebrow {
+  font-size: 8px;
+  color: var(--muted);
+}
+
+.spec-sheet-heading > span {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.spec-table {
+  margin: 0;
+}
+
+.spec-table > div {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 20px;
+  padding: 17px 0;
+  border-top: 1px solid var(--line);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.spec-table dt {
+  color: var(--muted);
+}
+
+.spec-table dd {
+  margin: 0;
+}
+
+.open-parts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.open-part {
+  padding: 25px 26px 29px;
+  border: 1px solid var(--line);
+}
+
+.open-part-heading {
+  color: var(--moss);
+  margin-bottom: 28px;
+}
+
+.open-part-heading .eyebrow {
+  font-size: 8px;
+}
+
+.open-part h3 {
+  font-size: 20px;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.open-part > p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+@media (max-width: 1150px) {
+  .source-manifest {
+    padding: 25px;
+  }
+  .manifest-license {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+  }
+  .manifest-license > span {
+    font-size: 70px;
+  }
+  .manifest-layers > li {
+    grid-template-columns: 18px 1fr;
+    gap: 7px;
+  }
+  .manifest-layers li > span:last-child {
+    grid-column: 2;
+  }
+  .spec-sheet {
+    padding: 25px 22px 8px;
+  }
+  .open-part {
+    padding: 22px;
+  }
+  .open-part h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .spec-grid {
+    grid-template-columns: 0.85fr 1.15fr;
+  }
+  .source-manifest {
+    padding: 22px;
+  }
+  .manifest-top .eyebrow {
+    font-size: 7px;
+  }
+  .manifest-top .pixel-mark {
+    width: 32px;
+    height: 32px;
+  }
+  .spec-sheet-heading .eyebrow {
+    font-size: 7px;
+  }
+  .spec-sheet-heading > span {
+    display: none;
+  }
+  .spec-table > div {
+    font-size: 10px;
+    gap: 12px;
+    padding: 15px 0;
+  }
+  .open-part {
+    padding: 19px;
+  }
+  .open-part h3 {
+    font-size: 18px;
+  }
+  .open-part > p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 600px) {
+  .specifications {
+    padding-top: 6px;
+  }
+  .spec-grid,
+  .open-parts {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .source-manifest {
+    padding: 26px 24px;
+  }
+  .manifest-top .eyebrow {
+    font-size: 8px;
+  }
+  .manifest-license {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 24px;
+    margin: 28px 0;
+  }
+  .manifest-license > span {
+    font-size: 76px;
+  }
+  .manifest-license > p {
+    font-size: 10px;
+  }
+  .manifest-layers > li {
+    grid-template-columns: 18px 1fr auto;
+    gap: 8px;
+  }
+  .manifest-layers li > span:last-child {
+    grid-column: auto;
+    font-size: 9px;
+  }
+  .manifest-note {
+    padding-top: 20px;
+  }
+  .spec-sheet {
+    padding: 23px 20px 7px;
+  }
+  .spec-sheet-heading {
+    padding-bottom: 20px;
+  }
+  .spec-table > div {
+    font-size: 11px;
+    grid-template-columns: 0.9fr 1.1fr;
+    padding: 17px 0;
+    gap: 14px;
+  }
+  .open-parts {
+    margin-top: 12px;
+  }
+  .open-part {
+    padding: 24px;
+  }
+  .open-part-heading {
+    margin-bottom: 22px;
+  }
+  .open-part h3 {
+    font-size: 23px;
+  }
+  .open-part > p {
+    font-size: 12px;
+  }
+}

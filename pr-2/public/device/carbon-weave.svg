@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <title>Карбоновое плетение корпуса</title>
+  <rect width="24" height="24" fill="#252b2d"/>
+  <path d="M0 0h12v6H0Zm12 12h12v6H12Z" fill="#3b4142"/>
+  <path d="M0 6h12v6H0Zm12 12h6V0h6v12h-6v12h-6Z" fill="#303638"/>
+  <path d="M1 1h10M1 3h10M1 5h10M13 13h10M13 15h10M13 17h10" stroke="#4a5050" stroke-width=".5"/>
+  <path d="M13 1v10m2-10v10m2-10v10M1 13v10m2-10v10m2-10v10" stroke="#3a4041" stroke-width=".5"/>
+  <path d="M0 11.5h12m0 12h12M11.5 0v12M23.5 12v12" stroke="#191e20" stroke-width="1"/>
+</svg>

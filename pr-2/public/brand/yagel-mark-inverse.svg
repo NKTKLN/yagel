@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" role="img" aria-label="Ягель — знак ростка, выворотка">
+  <title>Ягель — знак ростка, выворотка</title>
+  <!-- Сетка 16x16 из firmware/src/icons.h. Не сглаживать, не растягивать. -->
+  <path fill="#EBE9E2" shape-rendering="crispEdges" d="M10 2H14V3H10ZM2 3H5V4H2ZM9 3H14V4H9ZM2 4H7V5H2ZM8 4H14V5H8ZM2 5H8V6H2ZM9 5H14V6H9ZM2 6H8V7H2ZM10 6H13V7H10ZM3 7H9V8H3ZM10 7H11V8H10ZM4 8H9V9H4ZM6 9H9V10H6ZM7 10H9V11H7ZM7 11H9V12H7ZM7 12H9V13H7ZM7 13H9V14H7Z"/>
+</svg>
