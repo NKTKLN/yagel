@@ -38,7 +38,7 @@ export function UsagePaths() {
             аккаунт, приложение или подключение к сети.
           </p>
           <ul>
-            <li>Время и воздух — на одном экране</li>
+            <li>Wi-Fi настраивается по QR-коду с экрана</li>
             <li>Home Assistant — без строки кода</li>
             <li>Данные остаются в вашей сети</li>
           </ul>
@@ -58,7 +58,7 @@ export function UsagePaths() {
           </p>
           <ul>
             <li>Локальный HTTP/JSON API и MQTT</li>
-            <li>SDK на Python и C</li>
+            <li>Прошивка на ESP-IDF с модульными тестами</li>
             <li>Свои пороги, интерфейс и сценарии</li>
           </ul>
           <a className="text-link" href="#openness">

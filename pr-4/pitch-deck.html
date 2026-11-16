@@ -317,35 +317,35 @@ p.under, .under{ font-size:18px; color:var(--ink-soft); line-height:1.4; margin:
   </svg>
   <p class="slogan">Воздух, который видно</p>
   <p class="prod">Ягель A1 — монитор воздуха<br>с открытым API</p>
-  <p class="lead wide" style="margin-top:28px">CO₂, температура, влажность и давление — на E-Ink-экране, в Home Assistant и в вашем коде. Локальный HTTP/JSON без ключей и сроков, SDK, MQTT с автоопределением.</p>
-  <p class="addr" style="margin-top:40px">Фонд содействия инновациям · конкурс «Старт-1»<br>Запрос: 3 000 000 ₽ на 12 месяцев</p>
+  <p class="lead wide" style="margin-top:28px">CO₂, температура, влажность и давление — на E-Ink-экране, в Home Assistant и в вашем коде. Локальный HTTP/JSON без облака и аккаунта, MQTT с автообнаружением.</p>
+  <p class="addr" style="margin-top:40px">Фонд содействия инновациям · грант «Старт»<br>Запрос: 3 000 000 ₽ на 12 месяцев</p>
   <p class="foot">Питч-дек · практическое занятие №7 · «Стартап в информационных технологиях» · 2026</p>
 </section>
 
 <section class="sl">
   <p class="kicker">01 · Проблема</p>
   <div class="body">
-    <h2>Локально работает только прибор<br>за 25 000 ₽</h2>
-    <div class="grid g3" style="margin-top:40px">
+    <h2>Локально без аккаунта —<br>только прибор за 189 USD</h2>
+    <div class="grid g3" style="margin-top:28px">
       <div class="card">
-        <p class="label">Локально из коробки</p>
-        <p class="num">25 000<span class="u"> ₽</span></p>
-        <p class="under">Aranet4 — единственный, кто не ходит через облако. Цена лабораторного класса</p>
+        <p class="label">Локально без аккаунта</p>
+        <p class="num">189<span class="u"> USD</span></p>
+        <p class="under">Aranet4 Home отдаёт данные локально, но по Bluetooth</p>
       </div>
       <div class="card">
         <p class="label">Массовый сегмент</p>
-        <p class="num">3–9<span class="u"> тыс. ₽</span></p>
-        <p class="under">Qingping, Xiaomi, приборы на Tuya — показания идут на сервер производителя</p>
+        <p class="num">6–9<span class="u"> тыс. ₽</span></p>
+        <p class="under">Xiaomi — аккаунт или вручную извлечённый токен. Tuya — показания только через облако</p>
       </div>
       <div class="card">
-        <p class="label">Локально и дёшево</p>
+        <p class="label">Локально по Wi-Fi и дёшево</p>
         <p class="num warn">0</p>
-        <p class="under">Приборов в этой вилке с локальным доступом из коробки нет</p>
+        <p class="under">Готовых приборов без аккаунта и облака по цене массового монитора в сравнении нет</p>
       </div>
     </div>
-    <p class="lead wide" style="margin-top:30px">Вернуть дешёвый прибор в свою сеть можно только обходным путём: перепрошить ESPHome или Tasmota, вытащить токен из бэкапа приложения, припаяться к UART. Это снимает гарантию и доступно единицам.</p>
+    <p class="lead wide" style="margin-top:22px">Остаётся самосборка на ESPHome: данные локальные, но компоненты нужно подобрать, спаять и прошить.</p>
   </div>
-  <p class="foot">Цены — <b>Яндекс Маркет, сентябрь 2026</b>. «Локально» — штатный доступ к показаниям в своей сети без облака производителя и без перепрошивки.</p>
+  <p class="foot">Цены Xiaomi и Tuya — <b>российские маркетплейсы, 05.11.2026</b>; Aranet4 — официальный магазин. Условия доступа — документация интеграций Home Assistant.</p>
 </section>
 
 <section class="sl">
@@ -354,24 +354,24 @@ p.under, .under{ font-size:18px; color:var(--ink-soft); line-height:1.4; margin:
     <h2>Открытый API и умный дом<br>из коробки</h2>
     <div class="grid g2" style="margin-top:40px">
       <div class="card">
-        <p class="label">Умный дом — без единой строки кода</p>
+        <p class="label">Готовый прибор — без единой строки кода</p>
         <ul>
+          <li>Wi-Fi настраивается по QR-коду с экрана, без перепрошивки</li>
           <li>Публикует показания в MQTT, Home Assistant находит прибор сам</li>
-          <li>Сценарии по CO₂: включить вытяжку, открыть клапан, прислать уведомление</li>
-          <li>Спутники Ягель S1 — та же сеть, от комнаты до этажа</li>
+          <li>Автоматизация по CO₂ выводит на экран «Проветрите комнату»</li>
         </ul>
       </div>
       <div class="card">
-        <p class="label">Свой код — локальный API и SDK</p>
+        <p class="label">Открытая платформа — локальный API</p>
         <ul>
-          <li>HTTP/JSON по адресу прибора: без облака, ключей и срока действия</li>
-          <li>SDK на Python и C — те же вызовы, что у прошивки</li>
-          <li>Формат и протокол описаны в репозитории, лицензия MIT</li>
+          <li>HTTP/JSON по адресу прибора: без облака и аккаунта</li>
+          <li>Веб-интерфейс в прошивке: история за 24 ч и экспорт CSV</li>
+          <li>Схема, прошивка и корпус опубликованы под MIT</li>
         </ul>
       </div>
     </div>
   </div>
-  <p class="foot">Экран — только одна из поверхностей. Те же данные идут в умный дом и в чужой код, и доступ к ним не истекает и не отзывается.</p>
+  <p class="foot">Экран — только одна из поверхностей. Те же данные идут в умный дом и в чужой код и не покидают локальную сеть.</p>
 </section>
 
 <section class="sl">
@@ -381,106 +381,107 @@ p.under, .under{ font-size:18px; color:var(--ink-soft); line-height:1.4; margin:
     <div class="grid g2" style="margin-top:40px; gap:52px; align-items:start">
       <div>
         <table>
-          <tr><td>Экран</td><td class="us">E-Ink 2,9″</td></tr>
-          <tr><td>Датчики</td><td class="us">MH-Z19B (CO₂), BME280</td></tr>
+          <tr><td>Экран</td><td class="us">E-Ink 2,9″, 4 раскладки</td></tr>
+          <tr><td>Датчики</td><td class="us">MH-Z19 (CO₂), BME280</td></tr>
           <tr><td>Контроллер</td><td class="us">ESP32-C3</td></tr>
-          <tr><td>Опрос и порог</td><td class="us">30 с, тревога от 1 000 ppm</td></tr>
-          <tr><td>API</td><td class="us">HTTP/JSON, SDK Python и C</td></tr>
-          <tr><td>Умный дом</td><td class="us">MQTT, автоопределение</td></tr>
+          <tr><td>Опрос и порог</td><td class="us">30 с, порог 400–5 000 ppm</td></tr>
+          <tr><td>API и обновление</td><td class="us">HTTP/JSON, OTA с откатом</td></tr>
+          <tr><td>Умный дом</td><td class="us">MQTT, автообнаружение</td></tr>
           <tr><td>Лицензия</td><td class="us">MIT</td></tr>
         </table>
       </div>
       <div class="card">
-        <p class="label">Линейка</p>
+        <p class="label">Проверено</p>
         <table>
-          <tr><td class="us nw">A1</td><td>часы и монитор воздуха</td></tr>
-          <tr><td class="us nw">A2</td><td>аккумулятор, PM2.5</td></tr>
-          <tr><td class="us nw">S1</td><td>датчик-спутник: от комнаты до этажа</td></tr>
+          <tr><td class="us nw">81</td><td>модульный тест в 13 наборах, все пройдены</td></tr>
+          <tr><td class="us nw">1</td><td>собранный прибор постоянно работает дома</td></tr>
+          <tr><td class="us nw">HA</td><td>настройка по QR, автообнаружение и уведомление на экране пройдены на приборе</td></tr>
         </table>
+        <p class="under">В плане развития — устройства A2 и S1, облако и приложение поверх локального API</p>
       </div>
     </div>
   </div>
-  <p class="foot">Все характеристики — из репозитория проекта, не из головы: <b>firmware/src/app_config.h</b>, README, LICENSE.</p>
+  <p class="foot">Характеристики — из репозитория проекта: <b>firmware/src/app_config.h</b>, README, LICENSE. Порог CO₂ по умолчанию — 1 000 ppm. Тесты — прогон 05.11.2026.</p>
 </section>
 
 <section class="sl">
   <p class="kicker">04 · Конкуренты</p>
   <div class="body">
-    <h2>Открытого API нет ни у кого</h2>
-    <table style="margin-top:40px">
+    <h2>Ниша: Wi-Fi без аккаунта и облака</h2>
+    <table style="margin-top:36px">
       <tr>
-        <th style="width:26%">Прибор</th>
-        <th class="n" style="width:16%">Цена, ₽</th>
-        <th style="width:30%">Локальный API</th>
-        <th style="width:24%">Исходники</th>
+        <th style="width:22%">Решение</th>
+        <th class="n" style="width:18%">Цена</th>
+        <th style="width:34%">Доступ к данным</th>
+        <th style="width:26%">Home Assistant</th>
       </tr>
-      <tr><td class="us mark">Ягель A1</td><td class="n">5 000</td><td class="mark">HTTP/JSON и MQTT</td><td class="mark">открыты, MIT</td></tr>
-      <tr><td class="us">Aranet4 Home</td><td class="n">25 000+</td><td class="no">нет, BLE через приложение</td><td class="no">закрыты</td></tr>
-      <tr><td class="us">Qingping Lite</td><td class="n">7 300</td><td class="no">нет, только облако</td><td class="no">закрыты</td></tr>
-      <tr><td class="us">Xiaomi</td><td class="n">5 000–9 000</td><td class="no">только по токену</td><td class="no">закрыты</td></tr>
-      <tr><td class="us">Платформа Tuya</td><td class="n">3 000–7 000</td><td class="no">облачный, по ключу</td><td class="no">закрыты</td></tr>
+      <tr><td class="us mark">Ягель A1</td><td class="n">5 000 ₽</td><td class="mark">локально по Wi-Fi, без аккаунта</td><td class="mark">автообнаружение</td></tr>
+      <tr><td class="us">Aranet4 Home</td><td class="n">189 USD</td><td>локально по Bluetooth</td><td>Local Push</td></tr>
+      <tr><td class="us">Xiaomi</td><td class="n">6 800–8 700 ₽</td><td class="no">локально, аккаунт или токен</td><td>Local Polling</td></tr>
+      <tr><td class="us">Платформа Tuya</td><td class="n">около 6 200 ₽</td><td class="no">облако и аккаунт</td><td class="no">Cloud Push</td></tr>
+      <tr><td class="us">ESPHome</td><td class="n">детали</td><td>локально, но сборка и прошивка самому</td><td>автообнаружение</td></tr>
     </table>
-    <p class="lead wide" style="margin-top:34px">Ни один конкурент не отдаёт показания по локальному API без ключей. Аппаратно мы в одном ряду, отличает нас доступ к данным.</p>
+    <p class="lead wide" style="margin-top:26px">Аппаратно мы в одном ряду с массовыми приборами. Отличает нас доступ к данным.</p>
   </div>
-  <p class="foot">Цены — <b>Яндекс Маркет, сентябрь 2026</b>, розничная вилка по нескольким продавцам. Цена Ягеля A1 — плановая.</p>
+  <p class="foot">Цены Xiaomi и Tuya — <b>российские маркетплейсы, 05.11.2026</b>; Aranet4 — официальный магазин. Цена Ягеля A1 — плановая. Это сравнение четырёх групп решений, не обзор всего рынка.</p>
 </section>
 
 <section class="sl">
   <p class="kicker">05 · Рынок</p>
   <div class="body">
-    <h2>Рынок — 600 млн ₽ в год</h2>
+    <h2>719 800 установок Home Assistant</h2>
     <div class="grid g3" style="margin-top:44px">
       <div class="card">
-        <p class="label">TAM · ёмкость замены</p>
-        <p class="num">40<span class="u"> млрд ₽</span></p>
-        <p class="under">8 млн помещений, где человек проводит большую часть суток</p>
+        <p class="label">Аудитория платформы</p>
+        <p class="num">719 800</p>
+        <p class="under">активных установок Home Assistant в мире. Это нижняя граница: считаются только те, кто включил отчёт</p>
       </div>
       <div class="card">
-        <p class="label">SAM · покупают сегодня</p>
-        <p class="num">600<span class="u"> млн ₽</span></p>
-        <p class="under">120 тыс. бытовых мониторов CO₂ в год по РФ</p>
+        <p class="label">Наш способ подключения</p>
+        <p class="num">48,4<span class="u"> %</span></p>
+        <p class="under">установок используют MQTT — 276 069. Ещё 156 176 держат самодельные устройства на ESPHome</p>
       </div>
       <div class="card">
-        <p class="label">SOM · третий год</p>
-        <p class="num">30<span class="u"> млн ₽</span></p>
-        <p class="under">6 000 приборов в год — 5 % SAM</p>
+        <p class="label">Россия и Германия</p>
+        <p class="num">11 939</p>
+        <p class="under">установок в России. В Германии 139 250 — первое место в аналитике и следующий рынок</p>
       </div>
     </div>
-    <p class="lead wide" style="margin-top:34px">Плацдарм — сообщества Home Assistant и Habr: покупают сами, пишут обзоры, приводят следующих.</p>
+    <p class="lead wide" style="margin-top:34px">Каналы — сообщество Home Assistant, открытый репозиторий, свой сайт и маркетплейс. Второй сегмент — покупатели готового прибора для дома и малых офисов.</p>
   </div>
-  <p class="foot">Открытой статистики по сегменту в РФ нет. <b>Все три величины — собственная оценка</b> снизу, от числа помещений и цен конкурентов. Проверка объёма — задача первого года.</p>
+  <p class="foot">Источник — <b>открытая аналитика Home Assistant, 04.11.2026</b>. Спрос на готовый прибор и цену 5 000 ₽ не замеряли: это проверяют предзаказ опытной партии и интервью.</p>
 </section>
 
 <section class="sl">
   <p class="kicker">06 · Экономика</p>
   <div class="body">
-    <h2>Себестоимость 3 050 ₽, цена 5 000 ₽</h2>
-    <div class="grid g2" style="margin-top:36px; gap:52px; align-items:start">
+    <h2>Себестоимость 2 290 ₽, цена 5 000 ₽</h2>
+    <div class="grid g2" style="margin-top:30px; gap:52px; align-items:start">
       <div>
-        <p class="label">Себестоимость, партия 300 шт.</p>
+        <p class="label">Себестоимость, розничные цены</p>
         <table>
-          <tr><td>Датчик CO₂ MH-Z19B</td><td class="n">1 500</td></tr>
-          <tr><td>Экран E-Ink 2,9″</td><td class="n">800</td></tr>
-          <tr><td>Доп. датчики и обвязка</td><td class="n">300</td></tr>
-          <tr><td>ESP32-C3</td><td class="n">250</td></tr>
-          <tr><td>Плата</td><td class="n">200</td></tr>
-          <tr class="sum"><td>Итого</td><td class="n">3 050</td></tr>
+          <tr><td>Датчик CO₂ MH-Z19</td><td class="n">900</td></tr>
+          <tr><td>Экран E-Ink 2,9″</td><td class="n">450</td></tr>
+          <tr><td>ESP32-C3 Super Mini</td><td class="n">150</td></tr>
+          <tr><td>BME280, DS3231, пассивные</td><td class="n">190</td></tr>
+          <tr><td>Плата и корпус</td><td class="n">300</td></tr>
+          <tr><td>Логистика и брак</td><td class="n">300</td></tr>
+          <tr class="sum"><td>Итого</td><td class="n">2 290</td></tr>
         </table>
       </div>
       <div class="card">
         <p class="label">Маржа с прибора</p>
         <table>
-          <tr><td>Цена продажи</td><td class="n">5 000</td></tr>
-          <tr><td>Себестоимость</td><td class="n">−3 050</td></tr>
-          <tr><td>Логистика, возвраты, эквайринг</td><td class="n">−525</td></tr>
-          <tr class="sum"><td>Своя площадка, 28,5 %</td><td class="n">1 425</td></tr>
-          <tr><td>Маркетплейс, минус 15 % комиссии</td><td class="n">675</td></tr>
+          <tr><td>Цена продажи</td><td class="n">5 000</td></tr>
+          <tr><td>Себестоимость</td><td class="n">−2 290</td></tr>
+          <tr class="sum"><td>Маржа, свой сайт</td><td class="n">2 710</td></tr>
+          <tr><td>Постоянные расходы в месяц</td><td class="n">100 000</td></tr>
         </table>
-        <p class="under">Безубыточность при смеси каналов пополам — <span class="mark">334 шт./мес</span></p>
+        <p class="under">Безубыточность — <span class="mark">37 приборов в месяц</span>. На маркетплейсе маржа меньше на комиссию площадки</p>
       </div>
     </div>
   </div>
-  <p class="foot">УСН «доходы минус расходы», цена без НДС. Постоянные расходы — 350 000 ₽/мес. <b>Себестоимость расчётная</b>, проверяется на первой партии.</p>
+  <p class="foot">Цены комплектующих — <b>AliExpress, 10.11.2026</b>, без оптовых скидок. Постоянные расходы 100 000 ₽ в месяц и цена 5 000 ₽ — допущения. Второй поток дохода — установка для организаций.</p>
 </section>
 
 <section class="sl">
@@ -491,75 +492,76 @@ p.under, .under{ font-size:18px; color:var(--ink-soft); line-height:1.4; margin:
       <div class="card">
         <p class="label">Есть</p>
         <ul>
-          <li>Рабочий прототип: схема, плата, собранный экземпляр</li>
-          <li>Прошивка на ESP-IDF, MQTT и черновой HTTP/JSON</li>
-          <li>Модель корпуса и репозиторий под MIT</li>
+          <li>Собранный прибор: схема, плата, корпус</li>
+          <li>Прошивка на ESP-IDF: локальный API, MQTT с автообнаружением, веб-интерфейс, обновление по сети</li>
+          <li>81 модульный тест и сценарий на приборе</li>
+          <li>Репозиторий под MIT</li>
         </ul>
       </div>
       <div class="card">
         <p class="label">Нет — на это и просим</p>
         <ul>
-          <li>Релиз API, SDK и MQTT-автоопределения</li>
-          <li>Серийная ревизия платы и оснастка корпуса</li>
-          <li>Декларации ТР ТС — право продавать</li>
+          <li>Предзаказ и интервью: спрос и цена не проверены</li>
+          <li>Опытная, затем серийная партия</li>
+          <li>Декларация соответствия — право продавать</li>
           <li>Заявка в Роспатент, классы МКТУ 09 и 42</li>
         </ul>
       </div>
     </div>
   </div>
-  <p class="foot">Проверяется прямо сейчас: <b>github.com/NKTKLN/eink-environment-clock</b> — схема, прошивка, корпус, история коммитов.</p>
+  <p class="foot">Проверяется прямо сейчас: <b>github.com/NKTKLN/eink-environment-clock</b> — схема, прошивка, корпус, история коммитов. Откат при обновлении по сети на приборе ещё не проверяли.</p>
 </section>
 
 <section class="sl">
   <p class="kicker">08 · Команда</p>
   <div class="body">
-    <h2>Три роли: железо, софт, производство</h2>
+    <h2>Двое в команде, третья роль — в плане</h2>
     <div class="grid g3" style="margin-top:44px">
       <div class="card">
-        <p class="label">Схемотехника и прошивка</p>
-        <p>Автор платформы: плата, драйвер E-Ink, прошивка, корпус. Ведёт репозиторий с первого коммита.</p>
+        <p class="label">Никита Калинин</p>
+        <p>Руководитель проекта. Схема, плата, драйверы датчиков и экрана, сетевая часть и обновление прошивки.</p>
       </div>
       <div class="card">
-        <p class="label">API, SDK, интеграции</p>
-        <p>HTTP/JSON, SDK на Python и C, MQTT и Home Assistant. Документация и примеры.</p>
+        <p class="label">Иван Дроздов</p>
+        <p>Веб-интерфейс, HTTP-сервер и REST API, MQTT и автообнаружение в Home Assistant, CI и выпуски.</p>
       </div>
       <div class="card">
-        <p class="label">Продукт и производство</p>
-        <p>Поставщики, контрактная сборка, сертификация, площадки и сообщество.</p>
+        <p class="label">Расширение команды</p>
+        <p>К выходу на рынок — продукт и производство: поставщики, сборка, декларация. Позже — финансист.</p>
       </div>
     </div>
   </div>
-  <p class="foot">Требование конкурса «Старт-1» — команда от 2 до 7 человек. Трое закрывают календарный план без подряда, кроме лабораторных испытаний.</p>
+  <p class="foot">Сейчас в команде двое, они закрыли разработку MVP целиком. Граница зон ответственности в коде — интерфейс <b>/api/*</b>.</p>
 </section>
 
 <section class="sl">
   <p class="kicker">09 · Запрос</p>
   <div class="body">
-    <h2>3 000 000 ₽ на 12 месяцев</h2>
+    <h2>3 000 000 ₽ на 12 месяцев</h2>
     <div class="grid g2" style="margin-top:40px; gap:52px; align-items:start">
       <div>
         <p class="label">Смета НИОКР</p>
         <table>
-          <tr><td>Работа команды</td><td class="n">1 500 000</td></tr>
-          <tr><td>Опытные образцы, 3 ревизии</td><td class="n">520 000</td></tr>
-          <tr><td>Корпус и подрядчики</td><td class="n">430 000</td></tr>
-          <tr><td>Испытания и декларации</td><td class="n">350 000</td></tr>
-          <tr><td>Накладные</td><td class="n">200 000</td></tr>
-          <tr class="sum"><td>Итого</td><td class="n">3 000 000</td></tr>
+          <tr><td>Работа команды</td><td class="n">1 500 000</td></tr>
+          <tr><td>Опытные образцы, 3 ревизии</td><td class="n">520 000</td></tr>
+          <tr><td>Корпус и подрядчики</td><td class="n">430 000</td></tr>
+          <tr><td>Испытания и декларации</td><td class="n">350 000</td></tr>
+          <tr><td>Накладные</td><td class="n">200 000</td></tr>
+          <tr class="sum"><td>Итого</td><td class="n">3 000 000</td></tr>
         </table>
       </div>
       <div class="card">
         <p class="label">Что будет через год</p>
         <ul>
-          <li>API, SDK и интеграция с Home Assistant в релизе</li>
-          <li>Право продавать: декларации ТР ТС</li>
-          <li>30 приборов у пользователей</li>
+          <li>Спрос проверен: предзаказ и интервью с пользователями Home Assistant</li>
+          <li>Право продавать: декларация соответствия</li>
+          <li>30 приборов опытной партии у пользователей</li>
           <li>Подтверждённая себестоимость и первая выручка</li>
         </ul>
       </div>
     </div>
   </div>
-  <p class="foot">Грант, без доли в компании. Предельная сумма и условия — по действующей редакции конкурса на fasie.ru. Готовы показать работающий экземпляр: <b>github.com/NKTKLN/eink-environment-clock</b></p>
+  <p class="foot">Грант «Старт», без доли в компании. Смета — плановая; предельная сумма и условия — по действующей редакции конкурса на fasie.ru. Готовы показать работающий экземпляр: <b>github.com/NKTKLN/eink-environment-clock</b></p>
 </section>
 
 </div>
